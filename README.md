@@ -90,10 +90,10 @@ Not to make any attempt to identify or contact any individual(s) who may be the 
 <br>
 <br>
 <h3>
-2 RSNA-Breast-Cancer-Subset ImageMask Dataset
+2 RSNA-Breast-Cancer-Subset ImageMask Subset
 </h3>
 <h3>
-2.1 Download RSNA-Breast-Cancer-Subset ImageMask Dataset
+2.1 Download RSNA-Breast-Cancer-Subset ImageMask Subset
 </h3>
  If you would like to train this RSNA-Breast-Cancer-Subset Segmentation model by yourself,
 please download our dataset 
@@ -122,7 +122,7 @@ expand the downloaded , and put it under <b>./dataset/</b> to be.
 As shown above, the number of images of train and valid datasets is enough to use for a training set of our segmentation model.
 <br><br>
 <h3>
-2.2 Derivation of RSNA-Breast-Cancer-Subset ImageMask Dataset
+2.2 Derivation of RSNA-Breast-Cancer-ImageMask-Subset
 </h3>
 The folder structure of the original <b>RSNA-Breast-Cancer-Detection</b> is the following. It contains no annotation (mask) files,
 because it is an image classification dataset,
@@ -142,15 +142,14 @@ TensorFlow-FlexUNet-Image-Segmentation-AISSLab-Breast-Cancer
 </a> to all RSNA_Breast_Cancer images, without human annotation experts.
 <br><br>
 <b>Step 2</b><br>
-We genrated our own RSNA-Breast-Cancer-ImageMask-Dataset from all pairs of RSNA_Breast_Cancer images and
+We generated our own RSNA-Breast-Cancer-ImageMask-Dataset from all pairs of RSNA_Breast_Cancer images and
 their corresponding pseudo masks by excluding all empty black masks and their corresponding images. 
 <br>
 <br>
 <b>Step 3</b><br>
 We finally generated <b>RSNA-Breast-Cancer-ImageMask-Subset</b> from RSNA-Breast-Cancer-ImageMask-Dataset  
 by reducing the fullset dataset to one-fifth of its total size, because the number of image and mask 
-files of the fullset is 40,293 respectively, which is too large to use for our experimental project.
-<br>
+files of the fullset is 40,293 respectively, which is too large to use for our experiment.<br>
 <br>
 <b>
 You could potentially create a more refined pseudo masks from RSNA-Breast-Cancer images
